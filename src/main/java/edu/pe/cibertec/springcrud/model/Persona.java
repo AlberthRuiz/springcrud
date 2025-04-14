@@ -10,11 +10,20 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombre;
-    private String appelido;
+    private String nombres;
+    private String apellidos;
     private String documento;
     private String email;
+    private String telefono;
     private String direccion;
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
 
     public int getId() {
         return id;
@@ -24,20 +33,20 @@ public class Persona {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public String getAppelido() {
-        return appelido;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setAppelido(String appelido) {
-        this.appelido = appelido;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public String getDocumento() {
